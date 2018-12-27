@@ -23,3 +23,9 @@ output.logstash:
   # The Logstash hosts
   hosts: ["http://localhost:4444/logstash/"]
 ```
+
+### Troubleshooting
+If it doesn't work straight away, ssh into the virtual machine using `vagrant ssh` and run
+```
+sudo service nginx restart
+```

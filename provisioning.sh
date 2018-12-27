@@ -47,14 +47,10 @@ sudo apt-get install -y kibana
 # sudo service kibana start called in play.sh
 
 sudo apt-get install -y logstash
-sudo ln -s /home/vagrant/src/02-beats-input-push.conf /etc/logstash/conf.d/02-beats-input-push.conf
-sudo ln -s /home/vagrant/src/10-syslog-filter.conf /etc/logstash/conf.d/10-syslog-filter.conf
-sudo ln -s /home/vagrant/src/30-elasticsearch-output.conf /etc/logstash/conf.d/30-elasticsearch-output.conf
 # sudo service logstash start called in play.sh
 
 #
-# NGINX for reverse proxying to kibana
+# NGINX for reverse proxying to kibana, logstash, and elasticsearch
 #
 sudo apt-get install -y nginx
-sudo ln -s /home/vagrant/src/kibana-conf /etc/nginx/sites-enabled/kibana-conf
 # sudo service nginx start called in play.sh
