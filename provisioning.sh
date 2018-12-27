@@ -41,7 +41,7 @@ echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee 
 sudo apt-get update
 
 sudo apt-get install -y elasticsearch
-sudo service elasticsearch start
+# sudo service elasticsearch start called in play.sh
 
 sudo apt-get install -y kibana
 # sudo service kibana start called in play.sh
