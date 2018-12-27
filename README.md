@@ -10,7 +10,7 @@
 - Wait for the initial provisioning to complete.
 - Go to kibana by hitting [http://localhost:4444](http://localhost:4444) in your local machine.
 
-###Filebeats config
+### Filebeats config
 You can use the following configuration snippet to connect your beats to elasticsearch:
 ```
 output.elasticsearch:
